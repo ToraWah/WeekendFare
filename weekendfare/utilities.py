@@ -99,11 +99,12 @@ def create_logger(
 
     """
     try:
-        logging_cfg = config.get('LOGGING')
+        logging_cfg = config['LOGGING']
     except KeyError:
         logging_cfg = {}
     log_level = logging_cfg.get('log_level', log_level_override)
-    log_path  = logging_cfg.get('log_path', log_path)
+    if log_path == DEFAULT_LOG_PATH:    #FIXME: this is bad
+        log_path  = logging_cfg.get('log_path', log_path)
     log_freq  = logging_cfg.get('log_freq', 'midnight')
     log_total = int(logging_cfg.get('log_total', 30))
 
