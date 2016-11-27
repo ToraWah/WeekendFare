@@ -34,7 +34,7 @@ def test_bad_config():
 
     ## Test behavior with bad filepath
     with pytest.raises(FileNotFoundError):
-        bad_config = wf_utils.read_config(TEST_BAD_PATH)
+        bad_config = wf_utils.get_config(TEST_BAD_PATH)
 
 TEST_GLOBAL_CONFIG_PATH = path.join(HERE, 'test_config_global.cfg')
 TEST_LOCAL_CONFIG_PATH = path.join(HERE, 'test_config_local.cfg')
