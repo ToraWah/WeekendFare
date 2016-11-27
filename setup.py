@@ -67,8 +67,8 @@ setup(
     packages=find_packages(),
     data_files=[
     #    #TODO: license + README
-        ('Test', include_all_subfiles('test')),
-        ('Docs', include_all_subfiles('docs'))
+        ('Tests', include_all_subfiles('Tests')),
+        ('Docs', include_all_subfiles('Docs'))
     ],
     package_data={
         'weekendfare':[

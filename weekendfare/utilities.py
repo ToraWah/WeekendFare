@@ -190,3 +190,39 @@ def test_logpath(log_path, debug_mode=False):
         #TODO: windows behavior requires abspath to existing file
 
     return log_path
+
+USER_AGENT = 'WeekendFare https://github.com/ToraWah/WeekendFare'
+def fetch_GET_request(
+        url,
+        logger=DEFAULT_LOGGER
+):
+    """helper for generic GET requests
+
+    Args:
+        url (str): full URL of desired endpoint
+        logger (:obj:`logging.Logger`, optional): logger for tracking requests
+
+    Returns:
+        (:obj:`requests.request`): if good, returns request object
+
+    """
+    pass
+
+def fetch_POST_request(
+        url,
+        payload,
+        logger=DEFAULT_LOGGER
+):
+    """helper for generic POST requests
+
+    Args:
+        url (str): full URL of desired endpoint
+        payload (:obj:`dict`): JSON-serializable payload for POST request
+        logger (:obj:`logging.Logger`, optional): logger for tracking requests
+
+    Returns:
+        (:obj:`requests.request`): if good, returns request object
+
+    """
+    pass
+
