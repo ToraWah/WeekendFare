@@ -82,6 +82,59 @@ except KeyError as err_msg:
   raise err_msg
 ```
 
+###DEFAULT loggers
+So you made a library to be imported as `import weekendfare.demo as demo`.  As a good-programmer, you included `logger` messages throughout the library.  Unfortunately, `demo.py` isn't supposed to be run on its own... so how do you initialize those lovely `logger` calls?
+
+Easy, use a [`NullHandler` logger](https://docs.python.org/3/howto/logging.html#configuring-logging-for-a-library).  The rule-of-thumb all python libraries should follow are as follows:
+
+1. default/global logger should be a `NullHandler`.  This allows calls to `logging` without actually capturing messages
+2. real loggers should be built in `__main__`.  This means only include a real `logger` when the program is run directly
+3. libraries should allow importing of `logger` handles, to inherit behavior from the running program
+
+To put another way: only the top-level script should have a real `logger` writing out to file.  All imported libraries should then allow that master-logger to be imported inside to _enable_ logging.  
+
+```python
+"""demo.py"""
+import logging
+
+logger = logging.getLogger('NULL')        #by default, logger is global, but points to NULL
+logger.addHandler(logging.NullHandler())  #separated call because of weird behavior on some systems
+
+def import_logger(logging_obj):
+  """works, but not advised"""
+  global logger
+  logger = logging_obj #overwrite global logger
+  
+def hello_world():
+  logging.info('returning "hello world"')
+  return 'hello world
+ ```
+ 
+ ```python
+ """main.py"""
+ import weekendfare.utilities as wf_utils
+ import weekendfare.demo as wf_demo
+ 
+logger = logging.getLogger('NULL')        #very-best-practice, only create logger inside __main__
+logger.addHandler(logging.NullHandler())  
+
+if __name__ == '__main__':
+  logger = wf_utils.create_logger('demo_logger')  #create logger for main.py
+  wf_demo.import_logger(logger)                   #push logger to demo.py
+  logger.info('about to call demo.hello_world()')
+  hello_response = wf_demo.hello_world()
+  logger.info('hello_response={0}'.format(hello_response)
+```
+
+Expected log:
+```
+[INFO:main--<module>--10] about to call demo.hello_world()
+[INFO:demo--hello_world--13] returning "hello world"
+[INFO:main--<module>--15] hello_response=hello world
+```
+
+If `main.py` does not call `wf_demo.import_logger()`, the `[INFO:demo--hello_world--13]` line would not appear.  This is acceptable behavior for an imported library, and favors explicit behavior over implied/assumed behavior.  
+
 ##Request Helpers
 Fetching stuff from the internet is ezpz with [Requests](http://docs.python-requests.org/en/master/).  In an effort to avoid copy/pasted code, `request` logic has been wrapped up in the utilities package to allow for uniform use.
 
