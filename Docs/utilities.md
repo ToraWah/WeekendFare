@@ -112,8 +112,8 @@ def hello_world():
  
  ```python
  """main.py"""
- import weekendfare.utilities as wf_utils
- import weekendfare.demo as wf_demo
+import weekendfare.utilities as wf_utils
+import weekendfare.demo as wf_demo
  
 logger = logging.getLogger('NULL')        #very-best-practice, only create logger inside __main__
 logger.addHandler(logging.NullHandler())  
