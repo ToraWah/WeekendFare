@@ -10,6 +10,7 @@ from datetime import datetime
 
 import pytest
 from testfixtures import LogCapture
+import requests
 
 import weekendfare.utilities as wf_utils
 
@@ -134,3 +135,77 @@ def test_debug_logger(config=TEST_CONFIG):
     )
 
     test_cleanup_log_directory(logger)
+
+GET_ECHO_ENDPOINT = 'https://echo.getpostman.com/get'
+def test_GET_fetcher():
+    """ECHO test for GET utility
+
+    using postman echo utility https://echo.getpostman.com/#Request-Methods
+
+    """
+    params = {
+        'key1':'value1',
+        'arg2':'value2'
+    }
+
+    ## test that request goes ok
+    resp = wf_utils.fetch_GET_request(
+        GET_ECHO_ENDPOINT,
+        params=params
+    )
+
+    ## test that response json can be parsed
+    payload = resp.json()
+
+    ## test that response contains expected echo
+    assert payload['args'] == params
+    assert payload['headers']['user-agent'] == wf_utils.USER_AGENT
+
+def test_GET_fetcher_fail():
+    """excercize exceptions for GET utility"""
+    bad_url = GET_ECHO_ENDPOINT.replace('.com', '.comx')
+
+    with pytest.raises(Exception): #TODO: specific exception?
+        resp = wf_utils.fetch_GET_request(bad_url)
+
+    #TODO: bad status code tests?
+
+POST_ECHO_ENDPOINT = 'https://echo.getpostman.com/post'
+def test_POST_fetcher():
+    """ECHO test for GET utility
+
+    using postman echo utility https://echo.getpostman.com/#Request-Methods
+
+    """
+    params = {
+        'key1':'value1',
+        'arg2':'value2'
+    }
+    data = {
+        'data1':'value1',
+        'data2':'morevalues'
+    }
+
+    ## test that request goes ok
+    resp = wf_utils.fetch_POST_request(
+        POST_ECHO_ENDPOINT,
+        data,
+        params=params
+    )
+
+    ## test that response can be parsed
+    payload = resp.json()
+
+    ## test that response contains expected echo
+    assert payload['args'] == params
+    assert payload['data'] == data
+    assert payload['headers']['user-agent'] == wf_utils.USER_AGENT
+
+def test_POST_fetcher_fail():
+    """excercize exceptions for GET utility"""
+    bad_url = POST_ECHO_ENDPOINT.replace('.com', '.comx')
+
+    with pytest.raises(Exception): #TODO: specific exception?
+        resp = wf_utils.fetch_GET_request(bad_url)
+
+    #TODO: bad status code tests?

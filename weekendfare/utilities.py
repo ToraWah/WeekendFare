@@ -14,6 +14,8 @@ import warnings
 import logging
 from logging.handlers import TimedRotatingFileHandler
 
+import requests
+
 HERE = path.abspath(path.dirname(__file__))
 
 DEFAULT_LOGGER = logging.getLogger('NULL')
@@ -194,24 +196,57 @@ def test_logpath(log_path, debug_mode=False):
 
 USER_AGENT = 'WeekendFare https://github.com/ToraWah/WeekendFare'
 def fetch_GET_request(
-        url,
+        url: str,
+        params=None,
         logger=DEFAULT_LOGGER
 ):
     """helper for generic GET requests
 
     Args:
         url (str): full URL of desired endpoint
+        params (dict): key/value param pairs
         logger (:obj:`logging.Logger`, optional): logger for tracking requests
 
     Returns:
         (:obj:`requests.request`): if good, returns request object
 
     """
-    pass
+    logger.debug('fetching: ' + url)
+    request = None
+    header = {
+        'User-Agent': USER_AGENT
+    }
+
+    try:
+        request = requests.get(
+            url,
+            params=params,
+            headers=header
+        )
+    except Exception as err_msg:
+        logger.error(
+            'EXCEPTION: unable to parse payload' +
+            '\r\turl={0}'.format(url),
+            exc_info=True
+        )
+        logger.debug(request.text)
+        raise err_msg
+
+    if request.status_code == requests.codes.ok:
+        return request
+    else:
+        logger.error(
+            'EXCEPTION: bad status code' +
+            '\r\texception={0}'.format(request.status_code) +
+            '\r\turl={0}'.format(url)
+        )
+        logger.debug(request.text)
+        raise Exception('BAD STATUS CODE ' + str(request.status_code))
 
 def fetch_POST_request(
-        url,
-        payload,
+        url: str,
+        payload: dict,
+        params=None,
         logger=DEFAULT_LOGGER
 ):
     """helper for generic POST requests
@@ -219,11 +254,45 @@ def fetch_POST_request(
     Args:
         url (str): full URL of desired endpoint
         payload (:obj:`dict`): JSON-serializable payload for POST request
+        params (dict): key/value param pairs
         logger (:obj:`logging.Logger`, optional): logger for tracking requests
 
     Returns:
         (:obj:`requests.request`): if good, returns request object
 
     """
-    pass
+    logger.debug('fetching: ' + url)
+    request = None
+    header = {
+        'User-Agent': USER_AGENT
+    }
+
+    try:
+        request = requests.post(
+            url,
+            params=params,
+            json=payload,
+            headers=header
+        )
+    except Exception as err_msg:
+        logger.error(
+            'EXCEPTION: unable to parse payload' +
+            '\r\turl={0}'.format(url) +
+            '\r\tpayload={0}'.format(payload),
+            exc_info=True
+        )
+        logger.debug(request.text)
+        raise err_msg
+
+    if request.status_code == requests.codes.ok:
+        return request
+    else:
+        logger.error(
+            'EXCEPTION: bad status code' +
+            '\r\texception={0}'.format(request.status_code) +
+            '\r\turl={0}'.format(url) +
+            '\r\tpayload={0}'.format(payload)
+        )
+        logger.debug(request.text)
+        raise Exception('BAD STATUS CODE ' + str(request.status_code))
 
