@@ -50,11 +50,31 @@ class WeekendFare(cli.Application):
         ['d', '--debug'],
         help='Debug mode, send data to local files'
     )
+    #TODO: debug mode:
+    # -- use local results if possible
+    # -- force user acceptance for hitting API
+    # -- drop debug files
+    # -- toggle global DEBUG option?
 
     verbose = cli.Flag(
         ['-v', '--verbose'],
         help='enable verbose logging'
     )
+
+    #TODO: add query @cli.switch() calls
+    # -- start city
+    # -- destination city
+    # -- travel date(s)
+    # -- pasengers
+    # -- airline
+    # -- round-trip?
+    # -- number of stops/direct
+    # -- refundable? (cli.Flag)
+
+    #TODO: tryhard mode: multiple "slices"
+    # Use either of the following:
+    # -- repeatable switches: http://plumbum.readthedocs.io/en/latest/cli.html#repeatable-switches
+    # -- sub commands? http://plumbum.readthedocs.io/en/latest/cli.html#sub-commands
 
     def main(self):
         """CLI `main`.  Runs core logic of application"""
