@@ -73,6 +73,7 @@ setup(
     package_data={
         'weekendfare':[
             'weekendfare.cfg',
+            'qpx_query_template.json'   #TODO: move templates to data_files?
         ]
     },
     install_requires=[
