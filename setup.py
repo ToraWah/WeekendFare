@@ -59,7 +59,7 @@ setup(
     url='https://github.com/ToraWah/WeekendFare',
     download_url='TODO',
     version='0.0.0',
-    license='MIT',
+    license='TODO',
     classifiers=[
         'Programming Language :: Python :: 3.5'
     ],
