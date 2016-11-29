@@ -80,7 +80,8 @@ setup(
         'requests==2.12.1',
         'tinydb==3.2.1',
         'dataset==0.7.1',
-        'plumbum==1.6.2'
+        'plumbum==1.6.2',
+        'jsonschema==2.5.1'
     ],
     tests_require=[
         'pytest==3.0.3',
