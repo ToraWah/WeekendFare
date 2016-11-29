@@ -1,13 +1,19 @@
 alembic==0.8.8
 chardet==2.3.0
+colorama==0.3.7
 dataset==0.7.1
+jsonschema==2.5.1
 Mako==1.0.6
 MarkupSafe==0.23
 normality==0.3.6
 plumbum==1.6.2
+py==1.4.31
+pytest==3.0.4
 python-editor==1.0.1
 PyYAML==3.12
 requests==2.12.1
 six==1.10.0
 SQLAlchemy==1.1.4
+testfixtures==4.13.1
 tinydb==3.2.1
+-e git+git@github.com:ToraWah/WeekendFare.git@98e266070c87ce16bccac947e513ffff90cf50f5#egg=WeekendFare
