@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "QPX template",
+  "description": "https://developers.google.com/qpx-express/v1/trips/search",
+  "type": "object",
+  "properties": {
+    "request": {
+      "type": "object",
+      "properties": {
+        "passengers": {
+          "type": "object",
+          "description": "Counts for each passenger type in the request",
+          "properties": {
+            "kind": {
+              "description": "Identifier for passenger object",
+              "type": "string",
+              "enum":["qpxexpress#passengerCounts"]
+            },
+            "adultCount": {
+              "description": "The number of passengers that are adults",
+              "type": "integer"
+            },
+            "childCount": {
+              "description": "The number of passengers that are children",
+              "type": "integer"
+            },
+            "infantInLapCount": {
+              "description": "The number of passengers that are infants travelling in the lap of an adult",
+              "type": "integer"
+            },
+            "infantInSeatCount": {
+              "description": "The number of passengers that are infants each assigned a seat",
+              "type": "integer"
+            },
+            "seniorCount": {
+              "description": "The number of passengers that are senior citizens",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "kind",
+            "adultCount",
+            "seniorCount"
+          ]
+        },
+        "slice": {
+          "description": "The slices that make up the itinerary of this trip",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "description": "Identifies this as a slice input object",
+                "type": "string",
+                "enum": ["qpxexpress#sliceInput"]
+              },
+              "origin": {
+                "description": "Airport or city IATA designator of the origin",
+                "type": "string"
+              },
+              "destination": {
+                "description": "Airport or city IATA designator of the destination",
+                "type": "string"
+              },
+              "date": {
+                "description": "Departure date in YYYY-MM-DD format",
+                "type": "string"
+              },
+              "maxStops": {
+                "description": "The maximum number of stops the passenger(s) are willing to accept in this slice",
+                "type": "integer"
+              },
+              "maxConnectionDuration": {
+                "description": "The longest connection between two legs, in minutes, the passenger(s) are willing to accept",
+                "type": "integer"
+              },
+              "preferredCabin": {
+                "description": "Prefer solutions that book in this cabin for this slice",
+                "type": "string",
+                "enum":["COACH", "PREMIUM_COACH", "BUSINESS", "FIRST"]
+              },
+              "permittedDepartureTime": {
+                "type": "object",
+                "description": "Slices must depart in this time of day range, local to the point of departure",
+                "properties": {
+                  "kind": {
+                    "description": "Identifies this as a time of day range object",
+                    "type": "string",
+                    "enum": ["qpxexpress#timeOfDayRange"]
+                  },
+                  "earliestTime": {
+                    "description": "The earliest time of day in HH:MM format",
+                    "type": "string"
+                  },
+                  "latestTime": {
+                    "description": "The latest time of day in HH:MM format",
+                    "type": "string"
+                  }
+                }
+              },
+              "permittedCarrier": {
+                "description": "A list of 2-letter IATA airline designators",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "alliance": {
+                "description": "Slices with only the carriers in this alliance should be returned",
+                "type": "string"
+              },
+              "prohibitedCarrier": {
+                "description": "A list of 2-letter IATA airline designators",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "maxPrice": {
+          "description": "Do not return solutions that cost more than this price. ISO-4217",
+          "type": "string",
+          "pattern": "[A-Z]{3}\\d+(\\.\\d+)?"
+        },
+        "saleCountry": {
+          "description": "IATA country code representing the point of sale",
+          "type": "string"
+        },
+        "ticketingCountry": {
+          "description": "IATA country code representing the point of ticketing",
+          "type": "string"
+        },
+        "refundable": {
+          "description": "Return only solutions with refundable fares",
+          "type": "boolean"
+        },
+        "solutions": {
+          "description": "The number of solutions to return",
+          "type": "integer",
+          "maximum": 500
+        }
+      }
+    }
+  }
+}
