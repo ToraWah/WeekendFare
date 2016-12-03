@@ -63,13 +63,40 @@ class WeekendFare(cli.Application):
 
     #TODO: add query @cli.switch() calls
     # -- start city
+    start = cli.terminal.readline("Origin Airport code:")
     # -- destination city
+    dest = cli.terminal.readline("End Airport code:")
     # -- travel date(s)
-    # -- pasengers
-    # -- airline
+    date = cli.terminal.readline("Day of flight (YYYY-MM-DD):")
+    # -- times to fly between (optional)
+    early_time = "06:00"
+    late_time = "22:00"
+    # -- pasengers (all fields required)
+    pas_adult = 1
+    pas_child = 0
+    pas_infant_lap = 0
+    pas_infant_seat = 0
+    pas_senior = 0
+    # -- airline (optional)
     # -- round-trip?
-    # -- number of stops/direct
+    def roundtrip(home):
+        if True:
+            return_date = "2016-12-11"
+            early_return_time = "06:00"
+            late_return_time = "22:00"
+        else:
+            return
+    # -- direct flight
+    nonstop = cli.Flag(
+        ["-n", "--nonstop"],
+        help='Nonstop flight',
+    )   
+    layover_wait = 60 
     # -- refundable? (cli.Flag)
+    refund = cli.Flag(
+        ['-r', '--refund'],
+        help='If tickets need to be refundable'
+    )
 
     #TODO: tryhard mode: multiple "slices"
     # Use either of the following:
