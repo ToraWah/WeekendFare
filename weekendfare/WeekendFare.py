@@ -72,11 +72,11 @@ class WeekendFare(cli.Application):
     early_time = "06:00"
     late_time = "22:00"
     # -- pasengers (all fields required)
-    pas_adult = 1
-    pas_child = 0
-    pas_infant_lap = 0
-    pas_infant_seat = 0
-    pas_senior = 0
+    pas_adult = cli.CountOf(["-a", "--adult"], help = "Adult ticket")
+    pas_child = cli.CountOf(["-c", "--child"], help = "Child ticket")
+    pas_infant_lap = cli.CountOf(["-l", "--lap"], help = "Infant riding in lap")
+    pas_infant_seat = cli.CountOf(["-i", "--infant"], help = "Infant riding in seat")
+    pas_senior = cli.CountOf(["-s", "--senior"], help = "Senior ticket")
     # -- airline (optional)
     # -- round-trip?
     def roundtrip(home):
@@ -107,7 +107,7 @@ class WeekendFare(cli.Application):
         """CLI `main`.  Runs core logic of application"""
         build_logger(self.verbose)
         logger.debug('hello world')
-
+        
 if __name__ == '__main__':
     WeekendFare.run()
 
