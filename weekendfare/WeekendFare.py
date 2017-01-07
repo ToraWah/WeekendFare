@@ -28,6 +28,9 @@ logger = logging.getLogger(ME).addHandler(logging.NullHandler())
 ## script globals ##
 EARLY_TIME = config.get('WeekendFare', 'early_time')
 LATE_TIME = config.get('WeekendFare', 'late_time')
+REFUND = config.get('WeekendFare', 'refund')
+SOLUTIONS = config.get('WeekendFare','solutions')
+
 
 def build_logger(verbose=False):
     """build and attach logger for regular running
@@ -57,8 +60,15 @@ def validate_airport(airport_abrev):
     #   raise TypeError('message')
 
 def validate_datetime(datetime_str):
+    try:
+        datetime.strptime(datetime_str, '%Y-%m-%d')
+    except ValueError:
+        raise ValueError("Incorrect data format, should be YYYY-MM-DD")
     pass
-
+    """if datetime_str == datetime.strptime():
+        return self.date
+    else:
+        return "Bad date" """
     #from datetime import datetime, timedelta
     #look for strp/strftime.  Parse into datetime object, validate, return processed string
 
@@ -119,7 +129,6 @@ class WeekendFare(cli.Application):
 
     def main(self):
         """CLI `main`.  Runs core logic of application"""
-        self.kittens = 'calico'
         build_logger(self.verbose)
         logger.debug('hello world')
         # -- start city
@@ -152,8 +161,8 @@ class WeekendFare(cli.Application):
             'childCount': self.pas_child,
             'seniorCount': self.pas_senior
         }
-        qpx_query['request']['solutions'] = 50  #fixme, make default if not loaded
-        qpx_query['request']['refundable'] = 'False' #fixme, make default if not loaded
+        qpx_query['request']['solutions'] = SOLUTIONS #fixme, make default if not loaded
+        qpx_query['request']['refundable'] = REFUND #fixme, make default if not loaded
         logger.debug(json.dumps(qpx_query, indent=2))
 
 
