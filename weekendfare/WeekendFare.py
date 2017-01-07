@@ -72,6 +72,37 @@ def validate_datetime(datetime_str):
     #from datetime import datetime, timedelta
     #look for strp/strftime.  Parse into datetime object, validate, return processed string
 
+def build_request(request_parameters):
+    """function to build QPX request
+
+    Args:
+        request_parameters (:obj:`dict`): container with all the magic values in it
+
+    Returns:
+        (str): stringified request_parameters to match QPX template (https://qpx-express-demo.itasoftware.com/)
+
+    """
+    pass
+
+    #TOOLS: json.dumps(data, indent=2) https://docs.python.org/3.5/library/json.html
+    # Extra credit: validate against qpx_query_template with jsonschema (advanced)
+
+def parse_response(
+        response_data,
+        price_filter=None,
+        #additional search criteria here
+        #don't worry, it can be ugly for now
+    ):
+    """function to parse the response object for important info
+
+    Args:
+        (:obj:`dict` json): data from QPX
+
+    Returns:
+        (:obj:`dict`) flights worth knowing about
+
+    """
+    pass
 
 class WeekendFare(cli.Application):
     """Plumbum CLI application: WeekendFare"""
