@@ -1,0 +1,2699 @@
+{
+ "kind": "qpxExpress#tripsSearch",
+ "trips": {
+  "kind": "qpxexpress#tripOptions",
+  "requestId": "ho3vdfAVgRdrYew5w0PlhB",
+  "data": {
+   "kind": "qpxexpress#data",
+   "airport": [
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "DEN",
+     "city": "DEN",
+     "name": "Denver International"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "SEA",
+     "city": "SEA",
+     "name": "Seattle/Tacoma Sea/Tac"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "SFO",
+     "city": "SFO",
+     "name": "San Francisco International"
+    }
+   ],
+   "city": [
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "DEN",
+     "name": "Denver"
+    },
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "SEA",
+     "name": "Seattle"
+    },
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "SFO",
+     "name": "San Francisco"
+    }
+   ],
+   "aircraft": [
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "319",
+     "name": "Airbus A319"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "320",
+     "name": "Airbus A320"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "738",
+     "name": "Boeing 737"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "739",
+     "name": "Boeing 737"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "753",
+     "name": "Boeing 757"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "777",
+     "name": "Boeing 777"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "CR7",
+     "name": "Canadair RJ 700"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "E7W",
+     "name": "Embraer RJ-175"
+    }
+   ],
+   "tax": [
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "ZP",
+     "name": "US Flight Segment Tax"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "AY_001",
+     "name": "US September 11th Security Fee"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "US_001",
+     "name": "US Transportation Tax"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "XF",
+     "name": "US Passenger Facility Charge"
+    }
+   ],
+   "carrier": [
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "AS",
+     "name": "Alaska Airlines Inc."
+    },
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "F9",
+     "name": "Frontier Airlines, Inc."
+    },
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "UA",
+     "name": "United Airlines, Inc."
+    },
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "VX",
+     "name": "Virgin America Inc."
+    }
+   ]
+  },
+  "tripOption": [
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD206.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI008",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 353,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 138,
+        "flight": {
+         "carrier": "UA",
+         "number": "294"
+        },
+        "id": "GlygcmSLouSldPkS",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LBDEwU9rlnV9UiQW",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T09:48-08:00",
+          "departureTime": "2017-01-13T07:30-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "3",
+          "duration": 138,
+          "onTimePerformance": 80,
+          "mileage": 678,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ],
+        "connectionDuration": 62
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 153,
+        "flight": {
+         "carrier": "UA",
+         "number": "223"
+        },
+        "id": "GVn7rU838VNhnNzp",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LcmMOLuwpv01FpIQ",
+          "aircraft": "753",
+          "arrivalTime": "2017-01-13T14:23-07:00",
+          "departureTime": "2017-01-13T10:50-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "3",
+          "duration": 153,
+          "onTimePerformance": 60,
+          "mileage": 965,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "SAA7AQEN"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GlygcmSLouSldPkS"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GVn7rU838VNhnNzp"
+       }
+      ],
+      "baseFareTotal": "USD171.16",
+      "saleFareTotal": "USD171.16",
+      "saleTaxTotal": "USD35.64",
+      "saleTotal": "USD206.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD12.84"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA UA X/SFO UA DEN 171.16SAA7AQEN USD 171.16 END ZP SEA SFO XT 12.84US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD206.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI007",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 325,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 128,
+        "flight": {
+         "carrier": "UA",
+         "number": "368"
+        },
+        "id": "GRc0QjKHsCr8ctV2",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "L3Dn98JhTbRDtJa3",
+          "aircraft": "319",
+          "arrivalTime": "2017-01-13T08:08-08:00",
+          "departureTime": "2017-01-13T06:00-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "3",
+          "duration": 128,
+          "onTimePerformance": 90,
+          "mileage": 678,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ],
+        "connectionDuration": 38
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 159,
+        "flight": {
+         "carrier": "UA",
+         "number": "710"
+        },
+        "id": "GiU8m58woaHs66yO",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LWEowsnIGoyI35es",
+          "aircraft": "738",
+          "arrivalTime": "2017-01-13T12:25-07:00",
+          "departureTime": "2017-01-13T08:46-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "3",
+          "duration": 159,
+          "onTimePerformance": 90,
+          "mileage": 965,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "SAA7AQEN"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GRc0QjKHsCr8ctV2"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GiU8m58woaHs66yO"
+       }
+      ],
+      "baseFareTotal": "USD171.16",
+      "saleFareTotal": "USD171.16",
+      "saleTaxTotal": "USD35.64",
+      "saleTotal": "USD206.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD12.84"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA UA X/SFO UA DEN 171.16SAA7AQEN USD 171.16 END ZP SEA SFO XT 12.84US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD206.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00E",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 443,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 128,
+        "flight": {
+         "carrier": "UA",
+         "number": "368"
+        },
+        "id": "GRc0QjKHsCr8ctV2",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "L3Dn98JhTbRDtJa3",
+          "aircraft": "319",
+          "arrivalTime": "2017-01-13T08:08-08:00",
+          "departureTime": "2017-01-13T06:00-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "3",
+          "duration": 128,
+          "onTimePerformance": 90,
+          "mileage": 678,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ],
+        "connectionDuration": 162
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 153,
+        "flight": {
+         "carrier": "UA",
+         "number": "223"
+        },
+        "id": "GVn7rU838VNhnNzp",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LcmMOLuwpv01FpIQ",
+          "aircraft": "753",
+          "arrivalTime": "2017-01-13T14:23-07:00",
+          "departureTime": "2017-01-13T10:50-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "3",
+          "duration": 153,
+          "onTimePerformance": 60,
+          "mileage": 965,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "SAA7AQEN"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GRc0QjKHsCr8ctV2"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GVn7rU838VNhnNzp"
+       }
+      ],
+      "baseFareTotal": "USD171.16",
+      "saleFareTotal": "USD171.16",
+      "saleTaxTotal": "USD35.64",
+      "saleTotal": "USD206.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD12.84"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA UA X/SFO UA DEN 171.16SAA7AQEN USD 171.16 END ZP SEA SFO XT 12.84US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD206.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI009",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 374,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 144,
+        "flight": {
+         "carrier": "UA",
+         "number": "5742"
+        },
+        "id": "GxgOGIgXlcg6qXUv",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 2,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LgNopjfQ3EqRmSlk",
+          "aircraft": "E7W",
+          "arrivalTime": "2017-01-13T11:36-08:00",
+          "departureTime": "2017-01-13T09:12-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "3",
+          "duration": 144,
+          "operatingDisclosure": "OPERATED BY SKYWEST DBA UNITED EXPRESS",
+          "mileage": 678,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ],
+        "connectionDuration": 79
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 151,
+        "flight": {
+         "carrier": "UA",
+         "number": "2014"
+        },
+        "id": "GpCQFhN3M2z8DLXn",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 2,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "Lqu69Z1q6ocEQpNH",
+          "aircraft": "777",
+          "arrivalTime": "2017-01-13T16:26-07:00",
+          "departureTime": "2017-01-13T12:55-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "3",
+          "duration": 151,
+          "onTimePerformance": 70,
+          "mileage": 965,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "SAA7AQEN"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GpCQFhN3M2z8DLXn"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GxgOGIgXlcg6qXUv"
+       }
+      ],
+      "baseFareTotal": "USD171.16",
+      "saleFareTotal": "USD171.16",
+      "saleTaxTotal": "USD35.64",
+      "saleTotal": "USD206.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD12.84"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA UA X/SFO UA DEN 171.16SAA7AQEN USD 171.16 END ZP SEA SFO XT 12.84US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD206.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00F",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 476,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 138,
+        "flight": {
+         "carrier": "UA",
+         "number": "294"
+        },
+        "id": "GlygcmSLouSldPkS",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LBDEwU9rlnV9UiQW",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T09:48-08:00",
+          "departureTime": "2017-01-13T07:30-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "3",
+          "duration": 138,
+          "onTimePerformance": 80,
+          "mileage": 678,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ],
+        "connectionDuration": 187
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 151,
+        "flight": {
+         "carrier": "UA",
+         "number": "2014"
+        },
+        "id": "GpCQFhN3M2z8DLXn",
+        "cabin": "COACH",
+        "bookingCode": "S",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "Lqu69Z1q6ocEQpNH",
+          "aircraft": "777",
+          "arrivalTime": "2017-01-13T16:26-07:00",
+          "departureTime": "2017-01-13T12:55-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "3",
+          "duration": 151,
+          "onTimePerformance": 70,
+          "mileage": 965,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "SAA7AQEN"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GpCQFhN3M2z8DLXn"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AULup/pBSLxT2cOf+0H7fPFuFMLMnCpTSw8prG3/jDkU",
+        "segmentId": "GlygcmSLouSldPkS"
+       }
+      ],
+      "baseFareTotal": "USD171.16",
+      "saleFareTotal": "USD171.16",
+      "saleTaxTotal": "USD35.64",
+      "saleTotal": "USD206.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD12.84"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA UA X/SFO UA DEN 171.16SAA7AQEN USD 171.16 END ZP SEA SFO XT 12.84US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD230.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00D",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 385,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 128,
+        "flight": {
+         "carrier": "UA",
+         "number": "368"
+        },
+        "id": "GRc0QjKHsCr8ctV2",
+        "cabin": "COACH",
+        "bookingCode": "W",
+        "bookingCodeCount": 2,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "L3Dn98JhTbRDtJa3",
+          "aircraft": "319",
+          "arrivalTime": "2017-01-13T08:08-08:00",
+          "departureTime": "2017-01-13T06:00-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "3",
+          "duration": 128,
+          "onTimePerformance": 90,
+          "mileage": 678,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ],
+        "connectionDuration": 102
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 155,
+        "flight": {
+         "carrier": "UA",
+         "number": "431"
+        },
+        "id": "GSI+HVa-1RVToaWp",
+        "cabin": "COACH",
+        "bookingCode": "W",
+        "bookingCodeCount": 2,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LLBJ00FVG7ZIaFc6",
+          "aircraft": "738",
+          "arrivalTime": "2017-01-13T13:25-07:00",
+          "departureTime": "2017-01-13T09:50-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "3",
+          "duration": 155,
+          "onTimePerformance": 80,
+          "mileage": 965,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AmBO7IwDi4/8dw7pn05TPqS3im0rlpgiIAe4R6aYXS96",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "WAA7AQEN"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AmBO7IwDi4/8dw7pn05TPqS3im0rlpgiIAe4R6aYXS96",
+        "segmentId": "GRc0QjKHsCr8ctV2"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AmBO7IwDi4/8dw7pn05TPqS3im0rlpgiIAe4R6aYXS96",
+        "segmentId": "GSI+HVa-1RVToaWp"
+       }
+      ],
+      "baseFareTotal": "USD193.49",
+      "saleFareTotal": "USD193.49",
+      "saleTaxTotal": "USD37.31",
+      "saleTotal": "USD230.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD14.51"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA UA X/SFO UA DEN 193.49WAA7AQEN USD 193.49 END ZP SEA SFO XT 14.51US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD246.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00G",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 495,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 130,
+        "flight": {
+         "carrier": "VX",
+         "number": "751"
+        },
+        "id": "GjK8at3z0w9qALFo",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LVOff47beZV0tS0p",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T09:10-08:00",
+          "departureTime": "2017-01-13T07:00-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "2",
+          "duration": 130,
+          "onTimePerformance": 88,
+          "mileage": 678,
+          "secure": true
+         }
+        ],
+        "connectionDuration": 215
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 150,
+        "flight": {
+         "carrier": "VX",
+         "number": "866"
+        },
+        "id": "G2n4g1UERr8PUMns",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 1,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LU2jQI4E833l9axI",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T16:15-07:00",
+          "departureTime": "2017-01-13T12:45-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "2",
+          "duration": 150,
+          "onTimePerformance": 100,
+          "mileage": 965,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AQ5hzwvDilutyWaO7HjUYvSMYVcWan1APLZ8dAomXwVs",
+        "carrier": "VX",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "L7QNR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AQ5hzwvDilutyWaO7HjUYvSMYVcWan1APLZ8dAomXwVs",
+        "segmentId": "G2n4g1UERr8PUMns"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AQ5hzwvDilutyWaO7HjUYvSMYVcWan1APLZ8dAomXwVs",
+        "segmentId": "GjK8at3z0w9qALFo"
+       }
+      ],
+      "baseFareTotal": "USD208.37",
+      "saleFareTotal": "USD208.37",
+      "saleTaxTotal": "USD38.43",
+      "saleTotal": "USD246.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD15.63"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA VX X/SFO VX DEN 208.37L7QNR USD 208.37 END ZP SEA SFO XT 15.63US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD246.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00C",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 325,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 125,
+        "flight": {
+         "carrier": "VX",
+         "number": "753"
+        },
+        "id": "GJypkwVuc3d3Nkmu",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 1,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "L7U4Bvrmt7rUoGby",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T11:55-08:00",
+          "departureTime": "2017-01-13T09:50-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "2",
+          "duration": 125,
+          "onTimePerformance": 100,
+          "mileage": 678,
+          "secure": true
+         }
+        ],
+        "connectionDuration": 50
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 150,
+        "flight": {
+         "carrier": "VX",
+         "number": "866"
+        },
+        "id": "G2n4g1UERr8PUMns",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 1,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LU2jQI4E833l9axI",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T16:15-07:00",
+          "departureTime": "2017-01-13T12:45-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "2",
+          "duration": 150,
+          "onTimePerformance": 100,
+          "mileage": 965,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AQ5hzwvDilutyWaO7HjUYvSMYVcWan1APLZ8dAomXwVs",
+        "carrier": "VX",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "L7QNR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AQ5hzwvDilutyWaO7HjUYvSMYVcWan1APLZ8dAomXwVs",
+        "segmentId": "G2n4g1UERr8PUMns"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AQ5hzwvDilutyWaO7HjUYvSMYVcWan1APLZ8dAomXwVs",
+        "segmentId": "GJypkwVuc3d3Nkmu"
+       }
+      ],
+      "baseFareTotal": "USD208.37",
+      "saleFareTotal": "USD208.37",
+      "saleTaxTotal": "USD38.43",
+      "saleTotal": "USD246.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD15.63"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA VX X/SFO VX DEN 208.37L7QNR USD 208.37 END ZP SEA SFO XT 15.63US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD249.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI001",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 159,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 159,
+        "flight": {
+         "carrier": "UA",
+         "number": "693"
+        },
+        "id": "GW-XUBRIsVLNJCG1",
+        "cabin": "COACH",
+        "bookingCode": "V",
+        "bookingCodeCount": 2,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LfjooTZU-3Uo41Qw",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T16:29-07:00",
+          "departureTime": "2017-01-13T12:50-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 159,
+          "mileage": 1021,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AxT7T1QEZESC8N2IUrM7rBDfF7z8YvS53ocoyDgOk82Y",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "VAA0AXES"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AxT7T1QEZESC8N2IUrM7rBDfF7z8YvS53ocoyDgOk82Y",
+        "segmentId": "GW-XUBRIsVLNJCG1"
+       }
+      ],
+      "baseFareTotal": "USD218.60",
+      "saleFareTotal": "USD218.60",
+      "saleTaxTotal": "USD30.60",
+      "saleTotal": "USD249.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD16.40"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA UA DEN 218.60VAA0AXES USD 218.60 END ZP SEA XT 16.40US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-07T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD262.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI002",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 162,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 162,
+        "flight": {
+         "carrier": "F9",
+         "number": "142"
+        },
+        "id": "GBHinhiIxNQR-VAr",
+        "cabin": "COACH",
+        "bookingCode": "E",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LzY-wYdRnII2SnWh",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T22:32-07:00",
+          "departureTime": "2017-01-13T18:50-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 162,
+          "onTimePerformance": 86,
+          "mileage": 1021,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AidzFb+P17mASHRVD+mz0awa0DkC/OD2JICNFXvoho/Q",
+        "carrier": "F9",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "E00PXS5"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AidzFb+P17mASHRVD+mz0awa0DkC/OD2JICNFXvoho/Q",
+        "segmentId": "GBHinhiIxNQR-VAr"
+       }
+      ],
+      "baseFareTotal": "USD230.69",
+      "saleFareTotal": "USD230.69",
+      "saleTaxTotal": "USD31.51",
+      "saleTotal": "USD262.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD17.31"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA F9 DEN Q16.74 Q4.65 209.30E00PXS5 USD 230.69 END ZP SEA XT 17.31US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-06T23:05-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD262.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI003",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 164,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 164,
+        "flight": {
+         "carrier": "F9",
+         "number": "822"
+        },
+        "id": "GfSwd9D6mRozWL4l",
+        "cabin": "COACH",
+        "bookingCode": "E",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "L52nZKMDT2+D6qxP",
+          "aircraft": "319",
+          "arrivalTime": "2017-01-13T13:54-07:00",
+          "departureTime": "2017-01-13T10:10-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 164,
+          "onTimePerformance": 100,
+          "mileage": 1021,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AidzFb+P17mASHRVD+mz0awa0DkC/OD2JICNFXvoho/Q",
+        "carrier": "F9",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "E00PXS5"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AidzFb+P17mASHRVD+mz0awa0DkC/OD2JICNFXvoho/Q",
+        "segmentId": "GfSwd9D6mRozWL4l"
+       }
+      ],
+      "baseFareTotal": "USD230.69",
+      "saleFareTotal": "USD230.69",
+      "saleTaxTotal": "USD31.51",
+      "saleTotal": "USD262.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD17.31"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA F9 DEN Q16.74 Q4.65 209.30E00PXS5 USD 230.69 END ZP SEA XT 17.31US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-06T23:05-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD272.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI004",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 152,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 152,
+        "flight": {
+         "carrier": "AS",
+         "number": "674"
+        },
+        "id": "GYQ2TkBxGHOp3pTb",
+        "cabin": "COACH",
+        "bookingCode": "M",
+        "bookingCodeCount": 1,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LlzvCCRVr0mP3Xbe",
+          "aircraft": "739",
+          "arrivalTime": "2017-01-13T10:12-07:00",
+          "departureTime": "2017-01-13T06:40-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 152,
+          "onTimePerformance": 86,
+          "mileage": 1021,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AE2u0qd2D+p/KjmYlsiB5h6z1I3VVyuFI633pKFRORNw",
+        "carrier": "AS",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "M07N3"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AE2u0qd2D+p/KjmYlsiB5h6z1I3VVyuFI633pKFRORNw",
+        "segmentId": "GYQ2TkBxGHOp3pTb"
+       }
+      ],
+      "baseFareTotal": "USD240.00",
+      "saleFareTotal": "USD240.00",
+      "saleTaxTotal": "USD32.20",
+      "saleTotal": "USD272.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD18.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA AS DEN 240.00M07N3 USD 240.00 END ZP SEA XT 18.00US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD316.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI006",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 158,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 158,
+        "flight": {
+         "carrier": "UA",
+         "number": "5355"
+        },
+        "id": "GUUJwm0JQyRNEo58",
+        "cabin": "COACH",
+        "bookingCode": "Q",
+        "bookingCodeCount": 4,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LVaZmuvIHBMpq+z8",
+          "aircraft": "CR7",
+          "arrivalTime": "2017-01-13T14:39-07:00",
+          "departureTime": "2017-01-13T11:01-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 158,
+          "operatingDisclosure": "OPERATED BY SKYWEST DBA UNITED EXPRESS",
+          "mileage": 1021,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AUmrkc/y9eEd4Q2xybP1wot2s7dsxCDue43qQslGdE12",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "QAA0AKEN"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AUmrkc/y9eEd4Q2xybP1wot2s7dsxCDue43qQslGdE12",
+        "segmentId": "GUUJwm0JQyRNEo58"
+       }
+      ],
+      "baseFareTotal": "USD280.93",
+      "saleFareTotal": "USD280.93",
+      "saleTaxTotal": "USD35.27",
+      "saleTotal": "USD316.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD21.07"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA UA DEN 280.93QAA0AKEN USD 280.93 END ZP SEA XT 21.07US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-07T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD316.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI005",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 150,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 150,
+        "flight": {
+         "carrier": "AS",
+         "number": "668"
+        },
+        "id": "G4GbfIQetZf+o-bJ",
+        "cabin": "COACH",
+        "bookingCode": "B",
+        "bookingCodeCount": 1,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LXUVhelUX65PAlys",
+          "aircraft": "739",
+          "arrivalTime": "2017-01-13T13:45-07:00",
+          "departureTime": "2017-01-13T10:15-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 150,
+          "onTimePerformance": 88,
+          "mileage": 1021,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AVkqdcoBVVqbCzicbwtDYEGe0D0vY1abtcpPAbFehnuo",
+        "carrier": "AS",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "BASN3"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AVkqdcoBVVqbCzicbwtDYEGe0D0vY1abtcpPAbFehnuo",
+        "segmentId": "G4GbfIQetZf+o-bJ"
+       }
+      ],
+      "baseFareTotal": "USD280.93",
+      "saleFareTotal": "USD280.93",
+      "saleTaxTotal": "USD35.27",
+      "saleTotal": "USD316.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD21.07"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA AS DEN 280.93BASN3 USD 280.93 END ZP SEA XT 21.07US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-07T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD376.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00B",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 159,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 159,
+        "flight": {
+         "carrier": "UA",
+         "number": "244"
+        },
+        "id": "G2bOn0ee3mij5D+K",
+        "cabin": "COACH",
+        "bookingCode": "H",
+        "bookingCodeCount": 2,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LXRiBfeIjyjTBBK5",
+          "aircraft": "319",
+          "arrivalTime": "2017-01-13T09:04-07:00",
+          "departureTime": "2017-01-13T05:25-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 159,
+          "onTimePerformance": 90,
+          "mileage": 1021,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AlHJl29u0LhFqM0ICm1PX6PI1uLS59sC0eTvDGStKLM6",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "HAA0AKEY"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AlHJl29u0LhFqM0ICm1PX6PI1uLS59sC0eTvDGStKLM6",
+        "segmentId": "G2bOn0ee3mij5D+K"
+       }
+      ],
+      "baseFareTotal": "USD336.74",
+      "saleFareTotal": "USD336.74",
+      "saleTaxTotal": "USD39.46",
+      "saleTotal": "USD376.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD25.26"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA UA DEN 336.74HAA0AKEY USD 336.74 END ZP SEA XT 25.26US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-07T23:59-05:00",
+      "ptc": "ADT",
+      "refundable": true
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD376.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00A",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 158,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 158,
+        "flight": {
+         "carrier": "UA",
+         "number": "695"
+        },
+        "id": "GGobBZbtsCJpoRmA",
+        "cabin": "COACH",
+        "bookingCode": "H",
+        "bookingCodeCount": 1,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LuoxanN3K8ojoHM4",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T19:15-07:00",
+          "departureTime": "2017-01-13T15:37-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 158,
+          "onTimePerformance": 90,
+          "mileage": 1021,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AlHJl29u0LhFqM0ICm1PX6PI1uLS59sC0eTvDGStKLM6",
+        "carrier": "UA",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "HAA0AKEY"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AlHJl29u0LhFqM0ICm1PX6PI1uLS59sC0eTvDGStKLM6",
+        "segmentId": "GGobBZbtsCJpoRmA"
+       }
+      ],
+      "baseFareTotal": "USD336.74",
+      "saleFareTotal": "USD336.74",
+      "saleTaxTotal": "USD39.46",
+      "saleTotal": "USD376.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD25.26"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA UA DEN 336.74HAA0AKEY USD 336.74 END ZP SEA XT 25.26US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-07T23:59-05:00",
+      "ptc": "ADT",
+      "refundable": true
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD400.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00K",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 505,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 131,
+        "flight": {
+         "carrier": "AS",
+         "number": "222"
+        },
+        "id": "G44l1rOuZJ2Vb26j",
+        "cabin": "COACH",
+        "bookingCode": "Q",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LvsBt2OZe2zODkGf",
+          "aircraft": "739",
+          "arrivalTime": "2017-01-13T09:01-08:00",
+          "departureTime": "2017-01-13T06:50-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "I",
+          "duration": 131,
+          "onTimePerformance": 85,
+          "mileage": 678,
+          "secure": true
+         }
+        ],
+        "connectionDuration": 224
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 150,
+        "flight": {
+         "carrier": "AS",
+         "number": "1868"
+        },
+        "id": "GPasenIisDNW5pUM",
+        "cabin": "COACH",
+        "bookingCode": "G",
+        "bookingCodeCount": 1,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LZPvLn1EiyNJR0Zz",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T16:15-07:00",
+          "departureTime": "2017-01-13T12:45-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "2",
+          "duration": 150,
+          "operatingDisclosure": "OPERATED BY VIRGIN AMERICA",
+          "onTimePerformance": 100,
+          "mileage": 965,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AxudS0A864pU9B2jCXknbJIwip5KpYb4Vyk5VZmoKmas",
+        "carrier": "AS",
+        "origin": "SEA",
+        "destination": "SFO",
+        "basisCode": "Q07VN5"
+       },
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AcLe8AKotcGm3WPJABkZ3ZbLT9tSvEO/Uj1EKBbUnITw",
+        "carrier": "AS",
+        "origin": "SFO",
+        "destination": "DEN",
+        "basisCode": "G0QNR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AxudS0A864pU9B2jCXknbJIwip5KpYb4Vyk5VZmoKmas",
+        "segmentId": "G44l1rOuZJ2Vb26j"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AcLe8AKotcGm3WPJABkZ3ZbLT9tSvEO/Uj1EKBbUnITw",
+        "segmentId": "GPasenIisDNW5pUM"
+       }
+      ],
+      "baseFareTotal": "USD351.63",
+      "saleFareTotal": "USD351.63",
+      "saleTaxTotal": "USD49.17",
+      "saleTotal": "USD400.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD26.37"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA AS X/SFO 180.47Q07VN5 AS DEN 171.16G0QNR USD 351.63 END ZP SEA SFO XT 26.37US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD400.80",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00J",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 495,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 130,
+        "flight": {
+         "carrier": "AS",
+         "number": "1751"
+        },
+        "id": "G7PJSxOLpep1E2Cq",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "L9GSSAervXWwHS9J",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T09:10-08:00",
+          "departureTime": "2017-01-13T07:00-08:00",
+          "origin": "SEA",
+          "destination": "SFO",
+          "destinationTerminal": "2",
+          "duration": 130,
+          "operatingDisclosure": "OPERATED BY VIRGIN AMERICA",
+          "onTimePerformance": 88,
+          "mileage": 678,
+          "secure": true
+         }
+        ],
+        "connectionDuration": 215
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 150,
+        "flight": {
+         "carrier": "AS",
+         "number": "1868"
+        },
+        "id": "GPasenIisDNW5pUM",
+        "cabin": "COACH",
+        "bookingCode": "G",
+        "bookingCodeCount": 1,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LZPvLn1EiyNJR0Zz",
+          "aircraft": "320",
+          "arrivalTime": "2017-01-13T16:15-07:00",
+          "departureTime": "2017-01-13T12:45-08:00",
+          "origin": "SFO",
+          "destination": "DEN",
+          "originTerminal": "2",
+          "duration": 150,
+          "operatingDisclosure": "OPERATED BY VIRGIN AMERICA",
+          "onTimePerformance": 100,
+          "mileage": 965,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "ApEA6ZQ+pmh8TI8wkjw2fNinZtmv8YDn9fq3OtCDN+So",
+        "carrier": "AS",
+        "origin": "SEA",
+        "destination": "SFO",
+        "basisCode": "L7QNR"
+       },
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AcLe8AKotcGm3WPJABkZ3ZbLT9tSvEO/Uj1EKBbUnITw",
+        "carrier": "AS",
+        "origin": "SFO",
+        "destination": "DEN",
+        "basisCode": "G0QNR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AcLe8AKotcGm3WPJABkZ3ZbLT9tSvEO/Uj1EKBbUnITw",
+        "segmentId": "GPasenIisDNW5pUM"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "ApEA6ZQ+pmh8TI8wkjw2fNinZtmv8YDn9fq3OtCDN+So",
+        "segmentId": "G7PJSxOLpep1E2Cq"
+       }
+      ],
+      "baseFareTotal": "USD351.63",
+      "saleFareTotal": "USD351.63",
+      "saleTaxTotal": "USD49.17",
+      "saleTotal": "USD400.80",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD26.37"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.20"
+       }
+      ],
+      "fareCalculation": "SEA AS X/SFO 180.47L7QNR AS DEN 171.16G0QNR USD 351.63 END ZP SEA SFO XT 26.37US 8.20ZP 5.60AY 9.00XF SEA4.50 SFO4.50",
+      "latestTicketingTime": "2017-01-06T23:59-05:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD476.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00I",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 150,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 150,
+        "flight": {
+         "carrier": "AS",
+         "number": "678"
+        },
+        "id": "GYS1FfLHDTpF3c4d",
+        "cabin": "COACH",
+        "bookingCode": "Y",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LNp33eyzSIksg+BB",
+          "aircraft": "739",
+          "arrivalTime": "2017-01-13T23:10-07:00",
+          "departureTime": "2017-01-13T19:40-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 150,
+          "onTimePerformance": 95,
+          "mileage": 1021,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AR3wDDuSrv6TXnTtR/yq3K63SJwpbOsniJEG1pCrpwpk",
+        "carrier": "AS",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "YASR1"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AR3wDDuSrv6TXnTtR/yq3K63SJwpbOsniJEG1pCrpwpk",
+        "segmentId": "GYS1FfLHDTpF3c4d"
+       }
+      ],
+      "baseFareTotal": "USD429.77",
+      "saleFareTotal": "USD429.77",
+      "saleTaxTotal": "USD46.43",
+      "saleTotal": "USD476.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD32.23"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA AS DEN 429.77YASR1 USD 429.77 END ZP SEA XT 32.23US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-09T23:59-05:00",
+      "ptc": "ADT",
+      "refundable": true
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD476.20",
+    "id": "NJ9uloX0ZUQPwlWQvJUkhI00H",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 150,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 150,
+        "flight": {
+         "carrier": "AS",
+         "number": "682"
+        },
+        "id": "GbG5oB6trbjr1RyV",
+        "cabin": "COACH",
+        "bookingCode": "Y",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LmsVMh5bipXHBhf+",
+          "aircraft": "739",
+          "arrivalTime": "2017-01-13T17:35-07:00",
+          "departureTime": "2017-01-13T14:05-08:00",
+          "origin": "SEA",
+          "destination": "DEN",
+          "duration": 150,
+          "onTimePerformance": 92,
+          "mileage": 1021,
+          "meal": "Food for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AR3wDDuSrv6TXnTtR/yq3K63SJwpbOsniJEG1pCrpwpk",
+        "carrier": "AS",
+        "origin": "SEA",
+        "destination": "DEN",
+        "basisCode": "YASR1"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AR3wDDuSrv6TXnTtR/yq3K63SJwpbOsniJEG1pCrpwpk",
+        "segmentId": "GbG5oB6trbjr1RyV"
+       }
+      ],
+      "baseFareTotal": "USD429.77",
+      "saleFareTotal": "USD429.77",
+      "saleTaxTotal": "USD46.43",
+      "saleTotal": "USD476.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD32.23"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD5.60"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD4.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD4.10"
+       }
+      ],
+      "fareCalculation": "SEA AS DEN 429.77YASR1 USD 429.77 END ZP SEA XT 32.23US 4.10ZP 5.60AY 4.50XF SEA4.50",
+      "latestTicketingTime": "2017-01-09T23:59-05:00",
+      "ptc": "ADT",
+      "refundable": true
+     }
+    ]
+   }
+  ]
+ }
+}
