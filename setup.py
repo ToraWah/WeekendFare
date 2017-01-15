@@ -5,6 +5,8 @@ from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
 
 HERE = path.abspath(path.dirname(__file__))
+__version__ = '0.0.1'
+__project_name__ = 'WeekendFare'
 
 def include_all_subfiles(*args):
     """Slurps up all files in a directory (non recursive) for data_files section
@@ -38,7 +40,11 @@ class PyTest(TestCommand):
 
     def initialize_options(self):
         TestCommand.initialize_options(self)
-        self.pytest_args = ['test']    #load defaults here
+        self.pytest_args = [
+            'test',
+            '--cov=prosper/' + __project_name__,
+            '--cov-report=term-missing'
+        ]    #load defaults here
 
     def run_tests(self):
         import shlex
@@ -84,8 +90,9 @@ setup(
         'jsonschema==2.5.1'
     ],
     tests_require=[
-        'pytest==3.0.3',
-        'testfixtures==4.12.0'
+        'pytest>=3.0.0',
+        'testfixtures>=4.12.0',
+        'pytest_cov>=2.4.0'
     ],
     cmdclass={
         'test':PyTest
