@@ -25,6 +25,7 @@ config = wf_utils.get_config(CONFIG_ABSPATH)
 ## Leaving NullHandler will make testing easier later "trust me" (tm)
 logger = logging.getLogger(ME).addHandler(logging.NullHandler())
 
+DEBUG = False
 ## script globals ##
 EARLY_TIME = config.get('WeekendFare', 'early_time')
 LATE_TIME = config.get('WeekendFare', 'late_time')
@@ -104,6 +105,58 @@ def parse_response(
     """
     pass
 
+QPX_CACHE = path.join(HERE, config.get('WeekendFare', 'qpx_cache'))
+QPX_DB = TinyDB(QPX_CACHE)
+def try_cache(
+        qpx_query_slice,
+        qpx_query_filters=None
+):
+    """check the tinyDB cache for value
+
+    Note: only checks first slice (single slice tester)
+
+    Args:
+        (:obj:`dict`): qpx_query_slice
+
+    Returns:
+        (:obj:`dict` or None): value in tinydb
+
+    """
+    c_query = Query()
+
+    record = QPX_DB.search(
+        c_query.origin == qpx_query_slice['origin'] & \
+        c_query.destination == qpx_query_slice['destination'] & \
+        c_query.date == qpx_query_slice['date']
+    )
+
+    #TODO: add qpx_query_filters for better offline/cache behavior
+
+    if record:
+        logger.debug('--record found')
+        logger.debug(record)
+        return record
+
+    else:
+        return None
+
+
+def fetch_query(
+        qpx_query,
+        debug=DEBUG
+):
+    """Fetch data from qpx and return in normal format
+
+    Args:
+        (:obj:`dict` json): QPX-validated query for fetching
+        (bool, optional): debug mode: run in headless mode
+
+    Returns:
+        (:obj:`dict`): QPX response (or cached version)
+
+    """
+    pass
+
 class WeekendFare(cli.Application):
     """Plumbum CLI application: WeekendFare"""
     # http://plumbum.readthedocs.io/en/latest/cli.html
@@ -160,6 +213,9 @@ class WeekendFare(cli.Application):
 
     def main(self):
         """CLI `main`.  Runs core logic of application"""
+        global DEBUG
+        if self.debug:
+            DEBUG = self.debug
         build_logger(self.verbose)
         logger.debug('hello world')
         # -- start city

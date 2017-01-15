@@ -6,7 +6,7 @@ from setuptools.command.test import test as TestCommand
 
 HERE = path.abspath(path.dirname(__file__))
 __version__ = '0.0.1'
-__project_name__ = 'WeekendFare'
+__project_name__ = 'weekendfare'
 
 def include_all_subfiles(*args):
     """Slurps up all files in a directory (non recursive) for data_files section
